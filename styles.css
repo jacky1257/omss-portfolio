@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px; /* Adjust the width based on your preference */
+    height: 100vh;
+    background-color: #b7e954;
+    padding: 0.6rem 0.8rem;
+    
+}
+
+.sidebar.active {
+    width: 220px;
+}
+
+.logo h5 {
+    color: #f98572;
+    font-size: 20px;
+    opacity: 1;
+}
+.logo {
+    margin-bottom: 20px; /* Add margin to the logo */
+}
+.logo h5 span {
+    color: #fff;
+}
+
+.sidebar.active .logo h5 {
+    opacity: 1;
+}
+
+.nav-links {
+    position: relative;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+    height: 15px;
+    list-style-type: none;
+    margin: 0.8em auto;
+    width: 90%;
+}
+
+.nav-links a {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    color: white; /* Add this line */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+.nav-links li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-links li a i{
+    min-width: 65px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+/* Style For Index.php and Common Function.php */
+.container {
+    display: flex;
+    margin-left: 220px;
+    flex-wrap: wrap;
+    
+}
+
+.container h4 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px; 
+    margin-right: 550px;
+}
+
+.product-item{
+    
+    width: 30%; /* Sesuaikan lebar sesuai keinginan Anda */
+    padding: 10px;
+    border: 1px solid #dbe1e6;
+    height: 500px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 20px;
+    
+    
+}
+
+.product-item h1 {
+    font-size: 20px;
+    text-align: center;
+    
+  
+}
+
+.product-item p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: rgba(53, 227, 14, 0.989);
+}
+
+.product-item img {
+    width: 230px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20px; /* Adjust this value as needed */
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+.cart, .view {
+    text-align: center;
+}
+
+.cart a, .view a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 15px;
+    display: inline-block;
+}
+.image_details {
+    display: flex;
+    padding: 50px;
+    border: solid;
+    margin: 50px;
+}
+.dropbtn {
+    border: none;
+    background-color:white;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 10px; 
+    
+}
+
+.dropdown-content {
+    display: none;
+    list-style-type: none;
+    background-color: #555f68;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 70px;
+    
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    color: #f2f2f2;
+ 
+
+}
+
+.dropdown-content a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.dropbtn:hover {
+    background-color: #006400;
+    color: white;
+}
+
+.dropbtn:active {
+    background-color: #f2f2f2;
+    padding:3px 4px 3px 6px;
+}
+
+.table_container {
+    width: 80%;
+    margin: 0 auto 0 200px;
+    padding: 20px;
+    
+}
+
+.table_container th,
+.table_container td {
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.cart_img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+.footer_admin{
+    width: 100%;
+    background-color: #6c757d;
+    padding: 20px;
+    
+}
+
+.footer_admin p {
+    text-align: center;
+    margin: 0;
+    margin-left: 20%;
+}
